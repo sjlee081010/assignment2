@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node.js Web App</title>
+</head>
+<body>
+  <h1><a href="http://localhost:3000">Welcome to WEB</a></h1>
+  <ul id="fileList">
+    <!-- 서버에서 받아온 파일 리스트가 여기에 들어감 -->
+  </ul>
+  <h2>Create a new page</h2>
+  <form action="http://localhost:3000/create_process" method="post">
+    <p><input type="text" name="title" placeholder="title" required></p>
+    <p><textarea name="description" placeholder="description" required></textarea></p>
+    <p><input type="submit" value="Create"></p>
+  </form>
+</body>
+</html>
