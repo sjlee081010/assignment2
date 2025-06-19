@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
 
 export const Head = styled.header`
     height: 100px;
@@ -15,7 +14,9 @@ export const Nav = styled.nav`
     align-items: center;
 `;
 
-export const Login = styled(Link)`
+export const Login = styled.button`
+    all: none;
+    background-color: #fff;
     display: flex;
     width: 100px;
     height: 40px;
@@ -25,10 +26,18 @@ export const Login = styled(Link)`
     align-items: center;
     font-size: 1em;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
         background: #315cfd;
         color: #fff;
         font-size: 1.1em;
     }
+`;
+
+export const Img = styled.img`
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
 `;
